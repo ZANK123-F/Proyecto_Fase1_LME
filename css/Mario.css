@@ -5,16 +5,9 @@
     
 }
  
-a {
-  color: #000;
-  text-decoration: none;
-}
-
 body {
     background: url(https://w0.peakpx.com/wallpaper/940/567/HD-wallpaper-razer-gamer-games-razer-phone.jpg);
-   
-    
-    
+    background-repeat: no-repeat  100%;
     
 }
 
@@ -86,17 +79,27 @@ h1 {
     font-family: cursive;
     animation: desplazamiento 1s infinite;
     background: linear-gradient(to right, #FF0000, #00FF00, #09b975);
-    background-clip: text ;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
 
 
 }
+a {
+  text-decoration:dashed;
+}
     
+.volver{
+  
+  border: 10px;
+  border-radius: 12px;
+  text-align: right;
+  align-items: right; 
+  border-style: outset;
+}
 
 .nose {
-    background-color:#0e5e94;
+    background-image: url(https://th.bing.com/th/id/R.62df47717ba9d86b3cc714e2ff8ea818?rik=m%2bNsTyny2O7tkw&riu=http%3a%2f%2fimages2.fanpop.com%2fimages%2fphotos%2f5700000%2fMario-Wallpaper-nintendo-5739946-1280-1024.jpg&ehk=tsxH2IV%2fV%2f0bxTIz2bQGbgVyN5rd5qnCNkOzYI%2bM8Co%3d&risl=&pid=ImgRaw&r=0);
     background-repeat: no-repeat;
     
     align-items: center;
@@ -129,57 +132,78 @@ h1 {
     font-size: 36px;
     text-align: center;
     margin-bottom: 40px;
-    
+    color: #ffffff;
 }
-
-.elul {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-
-.elul li {
-    flex-basis: calc(33.33% - 10px);
-    margin-bottom: 30px;
-}
-
-.elul a {
-    text-decoration: none;
-    color: #fcf3f3;
-    display: block;
-    text-align: center;
-}
-
-.elul img {
-    width: 30pc;
-    text-align: center;
-    align-items: center;
-    
-}
-
-.elul h3 {
-    font-size: 24px;
-    margin: 0;
-}
-
 
 main p{
-  color: #e7e5e5;
+  color: #ffffff;
     font-weight: bold;
+    text-align: justify;
     
     
+}
+.imagenjuego {
+    width: 350px;
+    height: 550px;
+    float: left;
+}
+
+.slider {
+  width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+.slider ul{
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: cambio 15s infinite alternate linear;
+}
+.slider li {
+width: 100%;
+list-style: none;
+}
+.slider img {
+  width: 100%;
+  height: 250px;
+}
+@media(min-width: 768px){
+  .slider img{
+    height: 200px ;
+  }
+}
+@keyframes cambio{
+  0%{margin-left: 0;}
+  10%{margin-left: 0;}
+
+  20%{margin-left: -100%}
+  30%{margin-left: -100%;}
+
+  40%{margin-left: -200%;}
+  50%{margin-left: -200%;}
+
+  60%{margin-left: -300%;}
+  100%{margin-left: -300%;}
 }
 
 
 
-
-
-.airi{
-    text-align:center;
-    font-family: cursive;
-    font-size: 33px;
-    color: #0a490a;
+h3{
+  color: #ffffff;
+    font-size: 40px;
+}
+h4{
+    font-size: 30px;
+    color: #ffffff;
+}
+h5{
+    font-size: 25px; 
+    color: #ffffff;
+}
+.gameplay {
+  width: 300px;
+  height: 200px;
+  float: right;
 }
 h2 {
     text-align: center;
@@ -191,22 +215,19 @@ font-weight: bold;
 
 }
 
-h3 {
-    font-family: cursive;
-    color: #e7e5e5;
-}
-ul a::after{
+
+ul a::after{ 
     content: "";
     position: absolute;
     left: 00px;
     width: 100%;
     height: 4px;
-    background: linear-gradient(to right, #ec0ba9, #5306e4, #09b921);
+    background: linear-gradient(to right, #52ec0b, #026910, #09b921);
     border-radius: 5px ;
     bottom: -6px;
     transform: scaleX(0);
     transition: .5s;
-}
+} 
 ul a:hover::after{
     transform: scaleX(1);
 }
@@ -288,19 +309,19 @@ footer{
   
   @keyframes cambiar-colores {
     0% {
-      border-color: #f00; 
+      border-color: rgba(255, 0, 0, 0.678); 
     }
     25% {
-      border-color: #0f0; 
+      border-color: rgb(30, 255, 0); 
     }
     50% {
-      border-color: #00f; 
+      border-color: rgb(0, 17, 255); 
     }
     75% {
-      border-color: #f0f; 
+      border-color: rgb(255, 238, 0); 
     }
     100% {
-      border-color: #000; 
+      border-color: #bb2020; 
     }
 }
 
@@ -328,8 +349,6 @@ footer{
 
 footer P{
     text-align: center;
-    font-size: 18px;
+    font-size: 17px;
 }
-
-
 
