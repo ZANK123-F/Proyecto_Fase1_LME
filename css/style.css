@@ -5,21 +5,13 @@
     
 }
  
+body {
+    background: url(https://w0.peakpx.com/wallpaper/940/567/HD-wallpaper-razer-gamer-games-razer-phone.jpg);
+    background-repeat: no-repeat  100%;
+    
+}
 
 
-header {
-    background-color: #30176b;
-    color: #e7e5e5;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-	margin: 20px auto 0px;
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgb(100, 100, 100)), color-stop(1, rgb(40, 40, 40)));
-	background: -moz-linear-gradient(center top, rgb(100,100,100) 20%, rgb(40,40,40) 100%);
-    border: 3px solid #000;
-        animation: cambiar-colores 2s infinite; 
-      }
       
       @keyframes cambiar-colores {
         0% {
