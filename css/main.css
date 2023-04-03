@@ -75,6 +75,31 @@ nav li>a:hover
     opacity: 1.5;
     border-bottom: 6px solid yellow;
 }
+.dropdown a{
+    text-decoration: none;
+    display: block;
+    float: left;
+    width: 122px;
+    height: 70px;
+    text-align: center;
+    text-decoration: none;
+    color: #F5F5F5;
+    opacity: 0.8;
+    font-size: 16px;
+    line-height: 80px;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+.dropdown a:hover
+{
+    opacity: 1.5;
+    border-bottom: 6px solid yellow;
+}
+.dropdown-menu a:hover
+{
+    border: none;
+    opacity: 1.5;
+}
 .icons-right
 {
     margin-right: 23px;
