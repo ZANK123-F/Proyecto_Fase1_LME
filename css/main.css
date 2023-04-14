@@ -79,7 +79,8 @@ nav li>a:hover
     text-decoration: none;
     display: block;
     float: left;
-    width: 122px;
+    margin-left: 13px;
+    width: 132px;
     height: 70px;
     text-align: center;
     text-decoration: none;
