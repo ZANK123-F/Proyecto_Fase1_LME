@@ -1,0 +1,31 @@
+#infoContainer
+{
+    width: 100%;
+    margin-top: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.infoPage
+{
+    background-color: #0E0E11;
+    z-index: 100;
+}
+.infoCreator
+{
+    margin-top: 150px;
+   z-index: 100;
+    background-color: #0E0E11;
+}
+.img
+{
+    width: 95%;
+    height: 95%;
+}
+.colorCreator
+{
+    background-color: #212129;
+}
+.colorCreator2
+{
+    background-color: #050505 ;
+}
