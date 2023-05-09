@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+#contactContainer
+{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    border: 2px solid;
+    border-radius: 7px;
+    z-index: 100;
+    box-shadow: rgb(12, 12, 12) 7px 7px 7px 7px;
+}
+#contactM
+{
+    flex: 1;
+    order: 1;
+    border-right: 1px solid gray;
+}
+.title-font
+{
+    font-family: 'Open Sans', sans-serif;
+}
+#formEmail
+{
+    flex: 1.1;
+    order: 2;
+}
+#contactM i
+{
+    color: #004000;
+    opacity: 0.8;  
+}
