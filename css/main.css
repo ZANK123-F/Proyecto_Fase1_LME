@@ -298,7 +298,10 @@ nav li>a:hover
 .grid:last-of-type {
     box-shadow: 0px 12px 5px -5px rgba(92, 92, 92, 0.5);
 }
-
+h3{
+    color: white;
+    font-weight: bold;
+}
 
 /* estilos para pantallas más grandes */
 @media screen and (min-width: 768px) {
