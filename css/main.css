@@ -145,6 +145,8 @@ nav li>a:hover
 {
     opacity: 1.5;
 }
+
+
 #carouselContainer
 {
     display: flex;
@@ -242,4 +244,108 @@ nav li>a:hover
 .f
 {
     color: #F5F5F5 !important;
+.envoltorio {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	min-height: 50vh;
 }
+}
+
+.envoltorio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.servicios .envoltorio h3 {
+    color: rgb(216, 223, 221);
+    border-bottom: 2px solid rgb(216, 214, 214);
+    font-weight: bold;
+}
+
+.grid {
+    flex: 1 1 calc(50% - 20px); /* cambiamos el ancho a 50% para que se muestren solo dos por fila */
+    margin: 10px;
+    border: 1px solid rgb(156, 154, 154);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.grid p{
+    color: rgb(247, 240, 240);
+    margin-top: 12px;
+}
+
+.grid img {
+    max-width: 100%;
+    height:  auto;
+    margin-bottom: 20px;
+}
+
+.botoncito {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(85, 99, 95);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.grid:first-of-type,
+.grid:last-of-type {
+    box-shadow: 0px 12px 5px -5px rgba(92, 92, 92, 0.5);
+}
+
+
+/* estilos para pantallas más grandes */
+@media screen and (min-width: 768px) {
+    .grid {
+        flex-basis: calc(50% - 20px); /* cambiamos el ancho a 50% para que se muestren solo dos por fila */
+    }
+}
+
+/* estilos para pantallas más pequeñas */
+@media screen and (max-width: 480px) {
+    .grid {
+        flex-basis: 100%; /* cambiamos el ancho a 100% para que se muestren solo uno por fila */
+    }
+}
+
+    /* Estilos para pantallas grandes */
+@media screen and (min-width: 768px) {
+    #game-Container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    #game-Description {
+      flex: 1;
+      margin-right: 20px;
+    }
+    #img-Carousel {
+      flex: 2;
+    }
+  }
+  
+  /* Estilos para pantallas más pequeñas */
+  @media screen and (max-width: 767px) {
+    #game-Container {
+      flex-direction: column;
+    }
+    #game-Description {
+      margin-right: 0;
+    }
+  }
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  .carousel-item img {
+    border-radius: 20px;
+
+  }
+  
+  
