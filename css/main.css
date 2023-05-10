@@ -146,22 +146,10 @@ nav li>a:hover {
 .icons-right li>button:hover {
     opacity: 1.5;
 }
-
-
-#carouselContainer {
-    display: flex;
-    width: 100%;
-    margin-top: 100px;
-    margin-left: 25px;
-
-}
-
 #SliderAuto {
-    flex: 2;
     box-shadow: rgb(12, 12, 12) 10px 10px 10px 0px;
     z-index: 100;
 }
-
 #carouselInfo {
 
     flex: 1;
@@ -322,6 +310,66 @@ h3 {
         flex-basis: 100%;
         /* cambiamos el ancho a 100% para que se muestren solo uno por fila */
     }
+    nav {
+        float: left;
+    
+    }
+   nav li {
+        list-style: none;
+        float: left;
+    }
+    .logo {
+        float: left;
+        width: 40px;
+        height: 40px;
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    
+    .header {
+        float: left;
+        margin-left: 0px;
+        margin-top: 17px;
+        text-decoration: none;
+        color: #F5F5F5;
+        opacity: 0.8;
+        font-size: 12px;
+        line-height: 80px;
+    }
+    nav{
+        margin-left: 15px;
+    }
+    nav li>a {
+        text-decoration: none;
+        display: block;
+        float: left;
+        width: 60px;
+        height: 70px;
+        text-align: center;
+        text-decoration: none;
+        color: #F5F5F5;
+        opacity: 0.8;
+        font-size: 10px;
+        line-height: 80px;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    }
+    .dropdown a {
+        text-decoration: none;
+        display: block;
+        float: left;
+        margin-left: 19px;
+        width: 60px;
+        height: 70px;
+        text-align: center;
+        text-decoration: none;
+        color: #F5F5F5;
+        opacity: 0.8;
+        font-size: 10px;
+        line-height: 80px;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    }
 }
 
 /* Estilos para pantallas grandes */
@@ -350,6 +398,66 @@ h3 {
 
     #game-Description {
         margin-right: 0;
+    }
+    nav {
+        float: left;
+    
+    }
+   nav li {
+        list-style: none;
+        float: left;
+    }
+    .logo {
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-left: 10px;
+        margin-top: 15px;
+    }
+    
+    .header {
+        float: left;
+        margin-left: 0px;
+        margin-top: 17px;
+        text-decoration: none;
+        color: #F5F5F5;
+        opacity: 0.8;
+        font-size: 16px;
+        line-height: 80px;
+    }
+    nav{
+       margin-left: 25px;
+    }
+    nav li>a {
+        text-decoration: none;
+        display: block;
+        float: left;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        text-decoration: none;
+        color: #F5F5F5;
+        opacity: 0.8;
+        font-size: 16px;
+        line-height: 80px;
+        box-sizing: border-box;
+        text-transform: uppercase;
+    }
+    .dropdown a {
+        text-decoration: none;
+        display: block;
+        float: left;
+        margin-left: 60px;
+        width: 70px;
+        height: 70px;
+        text-align: center;
+        text-decoration: none;
+        color: #F5F5F5;
+        opacity: 0.8;
+        font-size: 16px;
+        line-height: 80px;
+        box-sizing: border-box;
+        text-transform: uppercase;
     }
 }
 
