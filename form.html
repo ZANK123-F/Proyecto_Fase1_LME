@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de venta de videojuego</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: cursive;
+            font-size: 16px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            margin-top: 0;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+            background-color: #fff;
+        }
+
+        input:focus,
+        select:focus {
+            outline: none;
+            border-color: #008080;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #008080;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #006666;
+        }
+
+        .success {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #00cc00;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        form {
+            margin-bottom: 50px;
+            margin-top: 10px;
+        }
+
+        .btn-comprar {
+            background-color: #28a745;
+            /* color verde */
+            color: #fff;
+            font-size: 18px;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 4px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* animación del botón de compra */
+        .btn-comprar::before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.4s ease-out;
+            pointer-events: none;
+        }
+
+        .btn-comprar:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn-comprar:active::before {
+            width: 500px;
+            height: 500px;
+            transition: all 0.1s ease-out;
+        }
+
+        /* estilo del mensaje de compra exitosa */
+        .mensaje-exitoso {
+            background-color: #28a745;
+            /* color verde */
+            color: #fff;
+            font-size: 18px;
+            border-radius: 4px;
+            padding: 12px 24px;
+            display: none;
+            margin-top: 0px;
+        }
+
+        .icono-check {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 24px;
+            line-height: 1;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <h1>Formulario de venta de videojuego</h1>
+    <form onsubmit="return false;">
+
+
+        <label for="nombre_completo">Nombre completo:</label>
+        <input type="text" id="nombre_completo" required>
+
+        <label for="correo_electronico">Correo electrónico:</label>
+        <input type="email" id="correo_electronico" required>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" required>
+
+
+
+        <label for="direccion_envio">Dirección de envío:</label>
+        <input type="text" id="direccion_envio" required>
+
+
+
+        <label for="numero_telefono">Número de teléfono:</label>
+        <input type="tel" id="numero_telefono" required>
+
+        <label for="metodo_pago">Método de pago:</label>
+        <select id="metodo_pago" required>
+            <option value="">Seleccione un método de pago</option>
+            <option value="tarjeta">Tarjeta de crédito</option>
+            <option value="paypal">PayPal</option>
+            <option value="transferencia">Transferencia bancaria</option>
+        </select>
+
+        <button id="comprar" class="btn-comprar">Comprar</button>
+    </form>
+    <div id="mensaje" class="mensaje-exitoso">
+        <span class="icono-check">&#10003;</span> ¡Compra exitosa!
+    </div>
+
+
+    <script>
+        const btnComprar = document.getElementById("comprar");
+        const mensajeExito = document.getElementById("mensaje");
+
+        btnComprar.addEventListener("click", () => {
+
+            mensajeExito.style.display = "block";
+
+
+            setTimeout(() => {
+                mensajeExito.style.display = "none";
+            }, 5000);
+        });
+    </script>
